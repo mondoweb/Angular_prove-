@@ -1,0 +1,26 @@
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+color: var(--color1);
+text-shadow: var( --t-shadow);
+  align-items: center;
+}
+
+.footer  img{
+   border: 4px solid;
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer{
+  flex-direction: column;
+  }
+
+  .footer span {
+    margin: 5% 0;
+    }
+}
+
+
+

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  azienda: string ='store web'
+
   title = 'miaprima-app';
+
+  obj = [ { 'uno': 1 } , {'due' : 2}]
 }

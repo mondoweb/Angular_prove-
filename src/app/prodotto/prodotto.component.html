@@ -1,0 +1,44 @@
+<h1 style="color: whitesmoke;
+text-shadow: 1px 1px 2px rgb(25, 24, 24) ,
+1px 1px 2px rgb(34, 34, 34) ; padding-left: 20px; ">I Nostri Magnifici Prodotti: </h1>
+
+
+<div class="prodotti">
+
+  <div class="prodotto" *ngFor="let el of prodotti">
+    <img src={{el.image}}  alt=""  srcset="" >
+    <em> {{el.description}}</em>
+    <!-- <p class="cerchio" *ngIf="el.disponibile"> <span style="margin-left: 20px ;"> disponibile</span> </p> -->
+        <!-- <p class="cerchio" [ngStyle]="{'background' : el.disponibile ? 'green' : 'red'}"> <span style="margin-left: 20px ;"> disponibile</span> </p> -->
+    <div class="centrale">
+      <span>  disponibilità</span>
+      <span  class="cerchio" [ngClass]=" el.disponibile ? 'disponibile' : 'ndispon'"> {{el.quantita}}</span>
+    </div>
+
+    <p> {{el.price | currency: 'EUR'}}</p>
+  </div>
+
+   <!--  -->
+    <!-- <div class="centrale" *ngFor="let el of prodotti " [ngSwitch]="el.disponibile">
+      <span   class="cerchio" *ngSwitchCase="true" [ngClass]="'disponibile'"> {{el.quantita}}  </span>
+      <span  class="cerchio" *ngSwitchCase="false" [ngClass]="'ndispon'" > {{el.quantita}}</span>
+     </div> -->
+<!--  -->
+
+    <!-- <div>
+      <p [ngStyle]="mystile"  *ngFor="let el of prodotti" >
+        <span *ngIf="el.disponibile == false" >
+           {{el.description}} - {{ el.price}}
+        </span>
+        <ng-template #showprodotti >
+          <span class="disponibile">
+              {{el.image}}
+          </span>
+
+        </ng-template>
+      </p>
+    </div> -->
+
+
+</div>
+

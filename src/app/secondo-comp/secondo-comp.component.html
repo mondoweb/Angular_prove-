@@ -1,0 +1,24 @@
+<p>secondo-comp works!</p>
+<span> Ciao  <em> {{nome}}  </em>   </span>
+<p> Oggi è <em> {{ oggi | date }}</em>  </p>
+<p> {{ data | date: 'yyy'}}</p>
+<p> {{123 | currency: 'EUR'  }}</p>
+<p> {{254 |currency: 'soldi'}}</p>
+
+<p> {{ 1.2 | number : '2.1-2'}} </p>
+<p> {{ 1.5 | percent : '1.2-2' }} </p>
+
+
+<p>  {{ 'possiamo fare la giornata ' | limitaTesto : 15 }}</p>
+
+
+<!-- <p> {{ obj | json }}</p> -->
+
+<!--
+
+  Realizzare una pipe custom, tramite il comando ng g pipe nomepipe,
+che letta una stringa, ne recuperi la lettera iniziale e la trasformi
+in maiuscolo.
+ Es. "buon lavoro ragazzi" verrà trasformato in "Buon lavoro ragazzi"
+
+ -->

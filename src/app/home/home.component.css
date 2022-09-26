@@ -1,0 +1,16 @@
+.home-img{
+  background-image: url('../assets/busnessPC.jpg');
+  background-size: cover;
+  height: 55vh !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.home-img  p {
+  padding: 2% auto;
+ color: var(--color1);
+ text-shadow: var(--t-shadow);
+}

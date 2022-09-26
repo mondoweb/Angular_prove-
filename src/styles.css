@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --color1: whitesmoke;
+  --t-shadow: 1px 1px 2px rgb(25, 24, 24) ,
+             1px 1px 2px rgb(34, 34, 34) ; text-align:  center;
+--boxshad:  1px 1px 1px 1px rgb(217, 217, 217);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
